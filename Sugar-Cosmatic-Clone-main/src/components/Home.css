@@ -1,0 +1,209 @@
+/* Default styles */
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slider-image {
+  width: 100%;
+  height: auto;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.prev-btn {
+  left: 0;
+  padding-left: 30px;
+}
+
+.next-btn {
+  right: 0;
+  padding-right: 30px;
+}
+
+.black_div {
+  width: 90%;
+  height: 250px;
+  background-color: rgb(0, 0, 0);
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+#main>div>h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.black_div>div:nth-child(2) h1 {
+  color: whitesmoke;
+  font-size: 35px;
+  font-weight: 900;
+}
+
+.black_div>div:nth-child(2)>a {
+  color: rgb(195, 31, 30);
+  font-size: 25px;
+  font-weight: 600;
+}
+
+#main {
+  height: 370px;
+}
+
+#main_part3 {
+  width: 100%;
+  height: 550px;
+  background-color: rgb(40, 40, 40);
+}
+
+#main_part3>div>h1 {
+  color: whitesmoke;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.card_div {
+  width: 18%;
+  height: 400px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.card_div>div:nth-child(1) {
+  width: 75%;
+  height: 200px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.card_div>div>img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.card_content {
+  color: black;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  font-size: large;
+  margin-top: 10px;
+}
+
+.card_div>div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.card_div>div:nth-child(4) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 95%;
+  margin-top: 10px;
+}
+
+.card_div>div:nth-child(4)>button {
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  border-radius: 2px;
+  height: 2.5rem;
+  font-size: small;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#card_div {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 7px;
+}
+
+.Reuse2 {
+  margin-top: 50px;
+}
+
+.lastB1 {
+  width: 95%;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+/* Media Query for smaller devices */
+@media only screen and (max-width: 768px) {
+  .card_div {
+      width: 45%; /* Adjust width for smaller screens */
+      margin: 10px; /* Add margin between cards */
+  }
+
+  .slider-btn {
+      font-size: 14px; /* Adjust font size of slider buttons */
+      padding: 8px; /* Adjust padding of slider buttons */
+  }
+
+  .black_div {
+      height: auto; /* Adjust height to auto for smaller screens */
+      padding: 20px; /* Add padding for better spacing */
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center; /* Center items */
+  }
+
+  .black_div>div:nth-child(2) h1 {
+      font-size: 25px; /* Adjust font size */
+  }
+
+  .black_div>div:nth-child(2)>a {
+      font-size: 20px; /* Adjust font size */
+  }
+
+  #main {
+      height: auto; /* Adjust height to auto for smaller screens */
+  }
+
+  .card_div {
+      height: auto; /* Adjust height to auto for smaller screens */
+  }
+
+  .card_div>div:nth-child(1) {
+      padding-top: 10px; /* Adjust padding */
+  }
+
+  .card_content {
+      font-size: medium; /* Adjust font size */
+  }
+
+  #card_div {
+      flex-direction: column; /* Stack cards vertically */
+      align-items: center; /* Center cards */
+  }
+
+  .lastB1 {
+      width: 90%; /* Adjust width */
+  }
+}
